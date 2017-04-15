@@ -12,6 +12,11 @@ set laststatus=2
 colorscheme onedark
 "enable syntax and plugins (for netrw)
 set noshowmode "to do not show mode, airline does it
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+let g:airline_symbols.branch = '⎇ '
+"let g:airline_symbols.branch = '⌥ '
 "let g:airline_powerline_fonts = 1
 filetype plugin on
 
