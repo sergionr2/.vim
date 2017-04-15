@@ -3,6 +3,7 @@
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 se nu
+set relativenumber
 se ts=3
 syntax enable
 
@@ -19,6 +20,16 @@ let g:airline_symbols.branch = '⎇ '
 "let g:airline_symbols.branch = '⌥ '
 "let g:airline_powerline_fonts = 1
 filetype plugin on
+
+function! NumberToggle() 
+	if(&relativenumber == 1) 
+		set norelativenumber
+	else 
+		set relativenumber
+	endif 
+endfunc
+nnoremap <C-n> :call NumberToggle()<cr>
+
 
 "search down into subfolders
 "Provides tab-completion for all file-related tasks
