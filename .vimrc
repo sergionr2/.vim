@@ -4,9 +4,9 @@
 set nocompatible
 se nu
 set relativenumber
-se ts=3
 syntax enable
-
+"tab and indexation
+set noet ci pi sts=0 sw=3 ts=3
 set laststatus=2
 "let g:airline#extensions#tabline#enabled = 1
 "let g:airline_theme = 'onedark'
