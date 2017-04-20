@@ -1,0 +1,9 @@
+[user]
+	name = Sergio N. Rodriguez
+	email = sergio-nicolas.rodriguez@parrot.com
+[color]
+	ui = auto
+[core]
+	editor = vim
+[push]
+	default = matching

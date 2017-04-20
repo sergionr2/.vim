@@ -6,7 +6,17 @@ se nu
 set relativenumber
 syntax enable
 "tab and indexation
-set noet ci pi sts=0 sw=3 ts=3
+set et sts=2 sw=2 tw=80 cino=:0N-sg0 "parrot ident
+"set noet ci pi sts=0 sw=3 ts=3
+":set noexpandtab "make tabs spaces
+":set copyindent
+":set preserveindent
+":set softtabstop=0  "make spaces feel like tabs
+":set shiftwidth=4
+":set tabstop=4
+"autocmd FileType python set noexpandtab
+"autocmd BufEnter *.py set noexpandtab
+
 set laststatus=2
 "let g:airline#extensions#tabline#enabled = 1
 "let g:airline_theme = 'onedark'
