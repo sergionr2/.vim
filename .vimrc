@@ -16,7 +16,7 @@ set et sts=2 sw=2 tw=80 cino=:0N-sg0 "parrot ident
 ":set tabstop=4
 "autocmd FileType python set noexpandtab
 "autocmd BufEnter *.py set noexpandtab
-
+set autoread
 set laststatus=2
 "let g:airline#extensions#tabline#enabled = 1
 "let g:airline_theme = 'onedark'
