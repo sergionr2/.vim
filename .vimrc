@@ -16,7 +16,7 @@ set et sts=2 sw=2 tw=80 cino=:0N-sg0 "parrot ident
 ":set tabstop=4
 "autocmd FileType python set noexpandtab
 "autocmd BufEnter *.py set noexpandtab
-
+set autoread
 set laststatus=2
 "let g:airline#extensions#tabline#enabled = 1
 "let g:airline_theme = 'onedark'
@@ -72,8 +72,8 @@ let g:netrw_liststyle=3		" tree view
 "READ TEMPLATES: remap
 "nmap forpy :-1r $HOME/.vim/for.py<CR>jkklj "normal mode remap 
 "inoremap forpy :-1r $HOME/.vim/for.py<CR>jkkl<Esc><Tab> "normal mode remap 
-
-" allow backspacing over everything in insert mode
+" remap to do.. FAST N1n2<# GOOD n1>N2# CP n2#> OTRS n1>new n1>new#
+"allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
 if has("vms")
