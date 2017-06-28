@@ -70,8 +70,8 @@ let g:netrw_liststyle=3       " tree view
 inoremap forcpp <Esc>:-1r $HOME/.vim/templates/for.cpp<CR>v3j=10w<Esc>i
 inoremap switch <Esc>:-1r $HOME/.vim/templates/switch.cpp<CR>v6j=wl<Esc>i
 "nmap forpy :-1r $HOME/.vim/for.py<CR>jkklj "normal mode remap
-" remap to do.. FAST N1n2<# GOOD n1>N2# CP n2#> OTRS n1>new#
-
+"inoremap forpy :-1r $HOME/.vim/for.py<CR>jkkl<Esc><Tab> "normal mode remap
+" remap to do.. FAST N1n2<# GOOD n1!^N2# CP n2#> OTRS n1>new#
 "allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
