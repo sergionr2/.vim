@@ -3,10 +3,12 @@
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 se nu
+se spell
 set relativenumber
 syntax enable
 "tab and indexation
-set et sts=2 sw=2 tw=80 cino=:0N-sg0 "parrot ident
+"tw=80
+set et sts=2 sw=2 cino=:0N-sg0 "parrot ident
 "set noet ci pi sts=0 sw=3 ts=3 " other ident
 ":set noexpandtab "make tabs spaces
 ":set copyindent
@@ -70,6 +72,7 @@ let g:netrw_liststyle=3       " tree view
 inoremap forcpp <Esc>:-1r $HOME/.vim/templates/for.cpp<CR>v3j=10w<Esc>i
 inoremap switch <Esc>:-1r $HOME/.vim/templates/switch.cpp<CR>v6j=wl<Esc>i
 inoremap doxy <Esc>:r $HOME/.vim/templates/doxygen<CR>v6j=11l<Esc>i
+inoremap cout <Esc>:r $HOME/.vim/templates/cout.cpp<CR>vl=13l<Esc>i
 "nmap forpy :-1r $HOME/.vim/for.py<CR>jkklj "normal mode remap
 "inoremap forpy :-1r $HOME/.vim/for.py<CR>jkkl<Esc><Tab> "normal mode remap
 " remap to do.. FAST N1n2<# GOOD n1!^N2# CP n2#> OTRS n1>new#
